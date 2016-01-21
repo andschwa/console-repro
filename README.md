@@ -1,9 +1,11 @@
 # Build with dotnet-cli
 
 ```sh
-dotnet restore
-dotnet publish --framework dnxcore50 --runtime ubuntu.14.04-x64 --output bin
+dotnet restore --no-cache
+dotnet publish --framework dnxcore50 --output bin
 ```
+
+Or `./build.sh` after `dotnet restore`.
 
 Note that dotnet-cli does not use the DNX host. Theoretically, the built DLL
 should also run with `corerun`, but building CoreFX and CoreCLR on Linux is
@@ -14,8 +16,8 @@ publishing eliminates this.
 
 # Run
 
-The binary will be called the same as `pwd`.
+The binary will be called `repro`.
 
 ```sh
-./bin/console-repro
+./bin/repro
 ```

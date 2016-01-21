@@ -1,10 +1,12 @@
 {
+    "name": "repro",
+
     "compilationOptions": {
         "emitEntryPoint": true
     },
 
     "dependencies": {
-	"NETStandard.Library": "1.0.0-rc2-23706"
+	"NETStandard.Library": "1.0.0-rc3-23720"
     },
 
     "frameworks": { "dnxcore50": { } }
